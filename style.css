@@ -1,0 +1,87 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(204, 199, 199, 1) 50%,
+    rgba(244, 239, 239, 1) 50%
+  );
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  height: 100vh;
+}
+
+#newGame {
+  height: 15%;
+}
+
+#currentGame {
+  height: 85%;
+}
+
+@media screen and (max-width: 575px) {
+  #dice {
+    width: 25%;
+  }
+  #rollDice {
+    margin-bottom: 0 !important;
+  }
+  .scorebox {
+    width: 30%;
+
+    height: 7em;
+    background-color: tomato;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  #dice {
+    width: 60%;
+  }
+  .scorebox {
+    width: 90%;
+
+    height: 7em;
+    background-color: tomato;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #dice {
+    width: 50%;
+  }
+  .scorebox {
+    width: 60%;
+
+    height: 7em;
+    background-color: tomato;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  #dice {
+    width: 40%;
+  }
+  .scorebox {
+    width: 40%;
+
+    height: 7em;
+    background-color: tomato;
+  }
+}
+
+.currentPlayer::after {
+  content: url("./pictures/dot.png");
+}
+
+#rollDice::before {
+  content: url("./pictures/rollDice.png");
+}
+
+#numberHolded::before {
+  content: url("./pictures/addToScore.png");
+}
+
+#newGame::before {
+  content: url("./pictures/newGame.png");
+}
