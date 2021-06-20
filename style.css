@@ -19,6 +19,11 @@ body {
   height: 85%;
 }
 
+.scorebox {
+  height: 7em;
+  background-color: tomato;
+}
+
 @media screen and (max-width: 575px) {
   #dice {
     width: 25%;
@@ -28,9 +33,6 @@ body {
   }
   .scorebox {
     width: 30%;
-
-    height: 7em;
-    background-color: tomato;
   }
 }
 
@@ -40,9 +42,6 @@ body {
   }
   .scorebox {
     width: 90%;
-
-    height: 7em;
-    background-color: tomato;
   }
 }
 
@@ -52,9 +51,6 @@ body {
   }
   .scorebox {
     width: 60%;
-
-    height: 7em;
-    background-color: tomato;
   }
 }
 
@@ -64,9 +60,6 @@ body {
   }
   .scorebox {
     width: 40%;
-
-    height: 7em;
-    background-color: tomato;
   }
 }
 
